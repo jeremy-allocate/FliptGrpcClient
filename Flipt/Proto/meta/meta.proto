@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package flipt.meta;
+
+import "google/api/httpbody.proto";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Flipt.gRPC.Meta";
+
+service MetadataService {
+  rpc GetConfiguration(google.protobuf.Empty) returns (google.api.HttpBody) {}
+  rpc GetInfo(google.protobuf.Empty) returns (google.api.HttpBody) {}
+}
