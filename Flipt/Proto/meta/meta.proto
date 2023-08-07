@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package flipt.meta;
 
-import "google/api/httpbody.proto";
+import "google-proto/google/api/httpbody.proto";
 import "google/protobuf/empty.proto";
 
 option csharp_namespace = "Flipt.gRPC.Meta";
