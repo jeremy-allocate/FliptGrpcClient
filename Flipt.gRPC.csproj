@@ -1,18 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>  
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Flipt.gRPC</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Jeremy Caron</Authors>
+    <Company>Flipt.io</Company>
+    <PackageTags>Flipt;gRPC;Feature Flags</PackageTags>
+    <Description>
+      This package contains an auto-generated gRPC client for communication with a Flipt feature flag server (see flipt.io for more).
+    </Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
 
-    <ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Google.Api.CommonProtos" Version="2.10.0" />
     <PackageReference Include="Grpc.Net.Client" Version="2.55.0" />
     <PackageReference Include="Grpc.Tools" Version="2.56.2">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.2.0"/>
   </ItemGroup>
   
   <ItemGroup>
